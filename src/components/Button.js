@@ -3,9 +3,9 @@ import { Text, TouchableOpacity } from 'react-native';
 
 const Button = () => {
   const { bottonStyle, textStyle } = styles;
-  
+
   return (
-    <TouchableOpacity style={bottonStyle}>
+    <TouchableOpacity onPress={() => console.log("press!!")} style={bottonStyle}>
       <Text style={textStyle}>
         Click me
       </Text>
